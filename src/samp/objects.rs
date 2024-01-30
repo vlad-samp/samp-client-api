@@ -13,7 +13,7 @@ pub struct Object<'a> {
 impl<'a> Object<'a> {
     fn new_v1(object: &'a r1::CObject) -> Object<'a> {
         Object {
-            object_v1: Some(object),
+            object_v1: None,
             object_v3: None,
             object_dl: None,
         }
@@ -21,7 +21,7 @@ impl<'a> Object<'a> {
 
     fn new_v3(object: &'a r3::CObject) -> Object<'a> {
         Object {
-            object_v3: Some(object),
+            object_v3: None,
             object_v1: None,
             object_dl: None,
         }
@@ -29,7 +29,7 @@ impl<'a> Object<'a> {
 
     fn new_dl(object: &'a dl::CObject) -> Object<'a> {
         Object {
-            object_dl: Some(object),
+            object_dl: None,
             object_v3: None,
             object_v1: None,
         }
