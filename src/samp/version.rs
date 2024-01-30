@@ -12,6 +12,7 @@ pub enum Version {
     V037,
     V037R2, // also unsupported
     V037R3,
+    V03DL,
     Unknown,
 }
 
