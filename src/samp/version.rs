@@ -58,6 +58,7 @@ pub fn version() -> Version {
             let version = match (major, minor, rc) {
                 (3, 7, 0) => Version::V037,
                 (3, 7, 2) => Version::V037R3,
+                (3, 8, 0) => Version::V03DL,
                 _ => Version::Unknown,
             };
 
@@ -73,3 +74,4 @@ pub fn version() -> Version {
 pub fn is_unknown_version() -> bool {
     version() == Version::Unknown
 }
+
